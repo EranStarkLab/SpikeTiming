@@ -1,13 +1,13 @@
 # SpikeTiming
-Computational routine for calculating the decoding quality, precision and reliability of spike timing.
+Computational routines for calculating decoding quality, precision, and reliability of spike timing.
 ## Overview
-The spike timing analysis does time-domain WN analysis for spike trains, yielding the results depicted in Levi et al. 
+The spike timing analysis implements the time-domain white-noise (WN) analyses for spike trains, yielding the results described in Levi, Spivak, Sloin, Someck, Stark, 2022, Cell Reports.
 
 ## Simulated spike trains
-To demonstrate the entire pipeline for simulated spike trains, a st_sim.m is available. To run it, you will need the following:
+To demonstrate the entire pipeline for simulated spike trains, use st_sim.m.
 
 ## Neuronal spike trains
-To demonstrate the entire pipeline for three recorded spike trains, a st_neuronal.m is available. To run it, you will need the following:
+To demonstrate the entire pipeline for real neuronal spike trains, use st_neuronal.m is available.
 
 ### Routines
 - st_sim.m
@@ -30,11 +30,11 @@ To demonstrate the entire pipeline for three recorded spike trains, a st_neurona
   - WN pattern
   - WN Fs
 - sim_spikes.mat 	
-  - Spike trains of 4 simulated units: High precision rate coder, high precision temporal coder, low precision rate coder and low precision temporal coder
+  - Spike trains of four simulated units: High precision rate coder, high precision temporal coder, low precision rate coder, and low precision temporal coder.
 - neuronal_spikes.mat 	
-  - Spike trains of 3 recoded units: Putative DA PYR, DA INT and IDA INT.
+  - Spike trains of 3 recoded units: DA PYR, DA INT, and IDA INT.
 
-### To run the routine
+### To run the code
 - Download all routines and data
-- For simulated spike trains, in MATLAB, write: stats = st_sim 
-- For recorded spike trains, in MATLAB, write: stats = st_neuronal
+- For simulated spike trains, in MATLAB, write: st_sim 
+- For real neuronal spike trains, in MATLAB, write: st_neuronal
