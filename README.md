@@ -36,5 +36,5 @@ To demonstrate the entire pipeline for three recorded spike trains, a st_neurona
 
 ### To run the routine
 - Download all routines and data
-- In MATLAB, write: (1) stats = st_sim 
-                    (2) stats = st_neuronal
+- For simulated spike trains, in MATLAB, write: stats = st_sim 
+- For recorded spike trains, in MATLAB, write: stats = st_neuronal
