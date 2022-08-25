@@ -32,7 +32,7 @@ To demonstrate the entire pipeline for three recorded spike trains, a st_neurona
 - sim_spikes.mat 	
   - Spike trains of 4 simulated units: High precision rate coder, high precision temporal coder, low precision rate coder and low precision temporal coder
 - neuronal_spikes.mat 	
-  - Spike trains of 4 recoded units: Putative DA PYR, DA INT and IDA INT.
+  - Spike trains of 3 recoded units: Putative DA PYR, DA INT and IDA INT.
 
 ### To run the routine
 - Download all routines and data
