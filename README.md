@@ -13,66 +13,66 @@ To demonstrate the entire pipeline for real neuronal spike trains, use st_neuron
 
 ### Wrappers
 - st_sim.m
-  - a wrapper, calls stAnalysis routine for simulated spikes trains
+  - A wrapper, calls stAnalysis routine for simulated spikes trains
 - st_neuronal.m
-  - a wrapper, calls stAnalysis routine for neuronal spikes trains
+  - A wrapper, calls stAnalysis routine for neuronal spikes trains
 - stAnalysis.m
   - Does time-domain WN analysis for spike trains
 
 ### Analysis
 - sta.m
-  - compute sta from spike train and analog vector
+  - Compute sta from spike train and analog vector
 - stacalc.m
-  - compute multi-sta from tagged spike trains and an analog vector
+  - Compute multi-sta from tagged spike trains and an analog vector
 - stahat.m
-  - reconstruct analog signal
+  - Reconstruct analog signal
 - stcodertypes.m
-  - classify reliability profiles into rate or temporal coders
+  - Classify reliability profiles into rate or temporal coders
 - stmix.m
-  - shuffle/jitter spikes in a sparse array
+  - Shuffle/jitter spikes in a sparse array
 - streconstruct.m
-  - reconstruct analog waveform from spike trains
+  - Reconstruct analog waveform from spike trains
 - streconstructXval.m
-  - cross-validation wrapper for streconstruct.m
+  - Cross-validation wrapper for streconstruct.m
 - streliability.m
-  - estimate reliability of single-cell spike trains
+  - Estimate reliability of single-cell spike trains
 - stwiener.m
-  - construct a modified Wiener filter for spike train and analog signal
+  - Construct a modified Wiener filter for spike train and analog signal
 
 ### Utilities
 - bayescount.m
-  - compute the number of bins for bias calculation, using the Bayes counting procedure of Panzeri&Treves 96
+  - Compute the number of bins for bias calculation, using the Bayes counting procedure of Panzeri&Treves 96
 - calc_bias_PT.m
-  - calculate an analytical estimate of MI bias from a joint probability table
+  - Calculate an analytical estimate of MI bias from a joint probability table
 - calc_fwhh.m
-  - determine full-width at half-height
+  - Determine full-width at half-height
 - calc_pearson.m
-  - compute Pearson's correlation coeffiecient
+  - Compute Pearson's correlation coeffiecient
 - calc_spearman.m
-  - compute Spearman's correlation coeffiecient
+  - Compute Spearman's correlation coeffiecient
 - isisort.m
-  - sort spikes into ISI groups
+  - Sort spikes into ISI groups
 - mixmat.m
-  - mix matrix elements
+  - Mix matrix elements
 - mutinf.m
-  - mutual information from empirical distributions/counts
+  - Mutual information from empirical distributions/counts
 - my_xcorr.m
-  - compute the column-wise cross-correlation between real matrices
+  - Compute the column-wise cross-correlation between real matrices
 - myjet.m
-  - modified jet with extreme values in pure R,B.
+  - Modified jet with extreme values in pure R,B.
 - nangeomean.m
-  - geometric mean
+  - Geometric mean
 - ParseArgPairs.m
-  - flexible argument assigning
+  - Flexible argument assigning
 - plot_raster.m
-  - raster display for spike trains
+  - Raster display for spike trains
 - resampleSig.m
-  - wrapper for resample.m
+  - Wrapper for resample.m
 
 ### C Utilities
-These Utility functions are operating system sepcific and require compiling in MATLAB (see section 'To run the code' below). 
+These utility functions are operating system sepcific and require compiling in MATLAB (see section 'To run the code' below). 
 - calc_cor.c
-  - calculate delays by enumerating on first spike train only
+  - Calculate delays by enumerating on first spike train only
 - zcs.c
   - Compute the Z-score of the columns of a given matrix
 
@@ -87,8 +87,8 @@ These Utility functions are operating system sepcific and require compiling in M
 
 ## To run the code
 - Download all routines and data
-- Compile the C utility functions using the 'mex' commend in MATLAB:
-  - to compile calc_cor.c, in MATLAB, write: mex('calc_cor.c')
-  - to compile zcs.c, in MATLAB, write: mex('zcs.c')
+- Compile the C utility functions using the 'mex' commAnd in MATLAB:
+  - To compile calc_cor.c, in MATLAB, write: mex('calc_cor.c')
+  - To compile zcs.c, in MATLAB, write: mex('zcs.c')
 - For simulated spike trains, in MATLAB, write: st_sim 
 - For real neuronal spike trains, in MATLAB, write: st_neuronal
