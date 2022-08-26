@@ -70,7 +70,7 @@ To demonstrate the entire pipeline for real neuronal spike trains, use st_neuron
   - Wrapper for resample.m
 
 ### C Utilities
-These utility functions are operating system sepcific and require compiling in MATLAB (see section 'To run the code' below). 
+These utility functions are operating system sepecific and require compiling in MATLAB (see section 'To run the code' below). 
 - calc_cor.c
   - Calculate delays by enumerating on first spike train only
 - zcs.c
@@ -87,7 +87,7 @@ These utility functions are operating system sepcific and require compiling in M
 
 ## To run the code
 - Download all routines and data
-- Compile the C utility functions using the 'mex' commAnd in MATLAB:
+- Compile the C utility functions using the 'mex' command in MATLAB:
   - To compile calc_cor.c, in MATLAB, write: mex('calc_cor.c')
   - To compile zcs.c, in MATLAB, write: mex('zcs.c')
 - For simulated spike trains, in MATLAB, write: st_sim 
