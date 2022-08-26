@@ -7,15 +7,15 @@ The spike timing analysis implements the time-domain white-noise (WN) analyses f
 To demonstrate the entire pipeline for simulated spike trains, use st_sim.m.
 
 ## Neuronal spike trains
-To demonstrate the entire pipeline for real neuronal spike trains, use st_neuronal.m is available.
+To demonstrate the entire pipeline for real neuronal spike trains, use st_neuronal.m.
 
 ## Routines
 
 ### Wrappers
 - st_sim.m
-  - the wrapper, calls stAnalysis routine for simulated spikes trains
+  - a wrapper, calls stAnalysis routine for simulated spikes trains
 - st_neuronal.m
-  - the wrapper, calls stAnalysis routine for neuronal spikes trains
+  - a wrapper, calls stAnalysis routine for neuronal spikes trains
 - stAnalysis.m
   - Does time-domain WN analysis for spike trains
 
