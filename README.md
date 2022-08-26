@@ -9,8 +9,9 @@ To demonstrate the entire pipeline for simulated spike trains, use st_sim.m.
 ## Neuronal spike trains
 To demonstrate the entire pipeline for real neuronal spike trains, use st_neuronal.m is available.
 
-### Routines
-## Wrappers
+## Routines
+
+### Wrappers
 - st_sim.m
   - the wrapper, calls stAnalysis routine for simulated spikes trains
 - st_neuronal.m
@@ -18,7 +19,7 @@ To demonstrate the entire pipeline for real neuronal spike trains, use st_neuron
 - stAnalysis.m
   - Does time-domain WN analysis for spike trains
 
-## Analysis
+### Analysis
 - sta.m
   - compute sta from spike train and analog vector
 - stacalc.m
@@ -38,7 +39,7 @@ To demonstrate the entire pipeline for real neuronal spike trains, use st_neuron
 - stwiener.m
   - construct a modified Wiener filter for spike train and analog signal
 
-## Utilities
+### Utilities
 - bayescount.m
   - compute the number of bins for bias calculation, using the Bayes counting procedure of Panzeri&Treves 96
 - calc_bias_PT.m
@@ -68,7 +69,7 @@ To demonstrate the entire pipeline for real neuronal spike trains, use st_neuron
 - resampleSig.m
   - wrapper for resample.m
 
-## C Utilities
+### C Utilities
 These Utility functions are operating system sepcific and require compiling in MATLAB (see section 'To run the code' below). 
 - calc_cor.c
   - calculate delays by enumerating on first spike train only
@@ -84,7 +85,7 @@ These Utility functions are operating system sepcific and require compiling in M
 - neuronal_spikes.mat 	
   - Spike trains of 3 recoded units: DA PYR, DA INT, and IDA INT.
 
-### To run the code
+## To run the code
 - Download all routines and data
 - Compile the C utility functions using the 'mex' commend in MATLAB:
   - to compile calc_cor.c, in MATLAB, write: mex('calc_cor.c')
